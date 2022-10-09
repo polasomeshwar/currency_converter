@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         fetch(`https://api.apilayer.com/exchangerates_data/convert?to=${to.value}&from=${from.value}&amount=${amount.value}`,requestOptions)
         .then(response=>response.json())
         .then(data=>{
-            let {from,to,result} = data;
-            document.querySelector("#resu").textContent = `After Conversion = ${result}`;
+            let {query,from,result} = data;
+            document.querySelector("#resu").textContent = `After Conversion = ${result} ${query.to}`;
         });
     })
 });
