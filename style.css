@@ -37,6 +37,11 @@ button{
     background-color: coral;
     color: white;
     font-size: larger;
+    font-weight: bold;
+}
+button:hover{
+    color: coral;
+    background-color: white;
 }
 p{
     color: white;
